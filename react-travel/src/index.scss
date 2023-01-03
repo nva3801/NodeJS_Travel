@@ -1,0 +1,139 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+body {
+  line-height: 1.5;
+}
+
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  outline: none;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+}
+.container {
+  max-width: 1120px;
+  padding: 0 15px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.slick-prev {
+  left: -35px;
+}
+.slick-next:before,
+.slick-prev:before {
+  color: black;
+  font-size: 30px;
+}
+.dropdown-item {
+  display: none;
+}
+.dropdown:hover .dropdown-item {
+  display: block;
+}
+.tabs {
+  font-weight: bold;
+}
+.tabs-active {
+  border: 1px solid black;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+  color: #ffb300;
+  font-weight: bold;
+}
+@media (max-width: 767px) {
+  .tabs-active {
+    border: none;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    background: #e7ecf3;
+  }
+}
+.tabs:hover {
+  background: #f1f1f1;
+  color: #ffb300;
+  font-weight: bold;
+  transition: 0.3s linear;
+  cursor: pointer;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+.content-item {
+  display: none;
+}
+.content-active {
+  display: block;
+}
+.progress.active {
+  border: 2px solid #ffb300;
+  border-radius: 8px;
+}
+.radio_active {
+  background-color: rgb(22 163 74);
+  color: white;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  width: 200px;
+  position: relative;
+  cursor: pointer;
+}
+@media (max-width: 767px) {
+  .radio_active {
+    width: 100%;
+  }
+  .radio_hidden {
+    width: 100% !important;
+  }
+}
+.radio_hidden {
+  background-color: #bfe2bf;
+  color: black;
+  padding: 12px;
+  border-radius: 8px;
+  font-weight: 500;
+  font-size: 16px;
+  width: 200px;
+  position: relative;
+  cursor: pointer;
+}
+.radio_hidden span {
+  display: none;
+}
